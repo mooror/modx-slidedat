@@ -2,25 +2,25 @@
 /**
  * Adds modActions and modMenus into package
  *
- * @package doodles
+ * @package -extra name
  * @subpackage build
  */
 $action= $modx->newObject('modAction');
 $action->fromArray(array(
     'id' => 1,
-    'namespace' => 'doodles',
+    'namespace' => '-extra name',
     'parent' => 0,
     'controller' => 'controllers/index',
     'haslayout' => true,
-    'lang_topics' => 'doodles:default',
+    'lang_topics' => '-extra name:default',
     'assets' => '',
 ),'',true,true);
 
 $menu= $modx->newObject('modMenu');
 $menu->fromArray(array(
-    'text' => 'doodles',
+    'text' => '-extra name',
     'parent' => 'components',
-    'description' => 'doodles.desc',
+    'description' => '-extra name.desc',
     'icon' => 'images/icons/plugin.gif',
     'menuindex' => 0,
     'params' => '',

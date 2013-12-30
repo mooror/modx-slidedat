@@ -1,8 +1,8 @@
 <?php
 /**
- * Doodles build script
+ * -extra names build script
  *
- * @package doodles
+ * @package -extra names
  * @subpackage build
  */
 $tstart = explode(' ', microtime());
@@ -10,8 +10,8 @@ $tstart = $tstart[1] + $tstart[0];
 set_time_limit(0);
 
 /* define package names */
-define('PKG_NAME','Doodles');
-define('PKG_NAME_LOWER','doodles');
+define('PKG_NAME','-extra names');
+define('PKG_NAME_LOWER','-extra names');
 define('PKG_VERSION','1.1');
 define('PKG_RELEASE','pl');
 

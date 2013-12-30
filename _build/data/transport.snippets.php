@@ -1,6 +1,6 @@
 <?php
 /**
- * @package doodles
+ * @package -extra names
  * @subpackage build
  */
 function getSnippetContent($filename) {
@@ -14,11 +14,11 @@ $snippets = array();
 $snippets[1]= $modx->newObject('modSnippet');
 $snippets[1]->fromArray(array(
     'id' => 1,
-    'name' => 'Doodles',
-    'description' => 'Displays a list of Doodles.',
-    'snippet' => getSnippetContent($sources['elements'].'snippets/snippet.doodles.php'),
+    'name' => '-extra names',
+    'description' => 'Displays a list of -extra names.',
+    'snippet' => getSnippetContent($sources['elements'].'snippets/snippet.-extra names.php'),
 ),'',true,true);
-$properties = include $sources['data'].'properties/properties.doodles.php';
+$properties = include $sources['data'].'properties/properties.-extra names.php';
 $snippets[1]->setProperties($properties);
 unset($properties);
 

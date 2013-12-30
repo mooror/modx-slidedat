@@ -2,7 +2,7 @@
 /**
  * Build Schema script
  *
- * @package doodles
+ * @package -extra name
  * @subpackage build
  */
 $mtime = microtime();
@@ -23,11 +23,11 @@ $modx->setLogTarget('ECHO');
 $root = dirname(dirname(__FILE__)).'/';
 $sources = array(
     'root' => $root,
-    'core' => $root.'core/components/doodles/',
-    'model' => $root.'core/components/doodles/model/',
-    'schema' => $root.'core/components/doodles/model/schema/',
-    'schema_file' => $root.'core/components/doodles/model/schema/doodles.mysql.schema.xml',
-    'assets' => $root.'assets/components/doodles/',
+    'core' => $root.'core/components/-extra name/',
+    'model' => $root.'core/components/-extra name/model/',
+    'schema' => $root.'core/components/-extra name/model/schema/',
+    'schema_file' => $root.'core/components/-extra name/model/schema/-extra name.mysql.schema.xml',
+    'assets' => $root.'assets/components/-extra name/',
 );
 $manager= $modx->getManager();
 $generator= $manager->getGenerator();
